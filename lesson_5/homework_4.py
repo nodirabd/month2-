@@ -3,7 +3,7 @@ class Contact:
         self.name = name
         self.phone_number = phone_number
 
-   @classmethod
+    @classmethod
     def validate_phone_number(cls, phone_number):
         if len(phone_number) == 10:
             return True
