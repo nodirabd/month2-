@@ -10,3 +10,12 @@ class Dog(Animal):
 """
 #SOLID- набор твердых правил
 #Patterns =шаблоны программирования
+""" методы экземпляра - селф 
+class.method 
+"""
+# static method- не нужны атрибуты объекты; функция// не относится к объекту ни к функции
+""" def validate_phone_number(phone_number):
+        if not phone_number.isdigit():
+            raise ValueError("нуправильный формат телефона")
+        :return True 
+        """

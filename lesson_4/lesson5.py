@@ -8,8 +8,7 @@ class User:
         self.phone_number = phone_number
         self.password = User.default_password
 
-    @classmethod
-
+    #@classmethod
 #экхемпляр=объект
 
 user_1 = User("Игорь", "996555000001")
@@ -20,3 +19,4 @@ print(user_1.password, user_2.password)
 User.user_count += 1
 
 print(f'Количество юзеров {User.user_count}')
+#branch = vetka
