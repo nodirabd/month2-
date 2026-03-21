@@ -1,0 +1,13 @@
+__pychace__/
+.venv/
+venv/
+.env
+
+
+
+
+
+#DATABASE
+*.db
+*.sqlite
+database.sqlite3
