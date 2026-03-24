@@ -1,16 +1,14 @@
-# This is a sample Python script.
+from lessons.lesson_5 import Money
+from lessons.database import (
+    create_tables,
+    add_users,
+    delete_users)
+import sqlite3
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+money_1 =Money(10, 'USD')
+connection =sqlite3.connect('database.db')
+create_tables(connection)
+add_users(
+    connection,
+    'Nodira', 18, 'Bishkek',
+         )
